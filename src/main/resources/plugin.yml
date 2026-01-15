@@ -1,0 +1,24 @@
+name: RankedSMP
+version: '1.0'
+main: org.csgd.rankedSMP.RankedSMP
+api-version: '1.21'
+authors: [ csgd ]
+
+commands:
+  rank:
+    description: Manage player ranks
+    usage: /rank [set|remove|info|list|perks] [args...]
+    permission: rankedsmp.use
+  extrainv:
+    description: Open your extra inventory (Rank 10+)
+    usage: /extrainv
+    permission: rankedsmp.use
+
+permissions:
+  rankedsmp.use:
+    description: Basic permission to use rank commands
+    default: true
+  rankedsmp.admin:
+    description: Permission to set/remove player ranks
+    default: op
+
